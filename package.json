@@ -1,0 +1,30 @@
+{
+  "name": "webrtcplussfu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "dev": "nodemon app.js",
+    "watch": "watchify public/index.js -o public/bundle.js -v"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "httpolyglot": "^0.1.2",
+    "mediasoup": "^3.18.0",
+    "mediasoup-client": "^3.14.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.0",
+    "babelify": "^10.0.0",
+    "nodemon": "^3.1.10"
+  }
+}
