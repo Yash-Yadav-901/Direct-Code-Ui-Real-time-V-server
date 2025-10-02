@@ -7,16 +7,19 @@ import mediasoup from "mediasoup";
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.static("public"));
+
 
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: { origin: "*" },
+  cors: { origin: [
+      "https://your-react-app.vercel.app",
+      "http://localhost:5173"
+    ] },
   transports: ["websocket"],
 });
 
-const PORT = process.env.PORT || 5001;
-const ANNOUNCED_IP = process.env.ANNOUNCED_IP || "127.0.0.1";
+const PORT = process.env.PORT || 4000;
+const ANNOUNCED_IP = process.env.ANNOUNCED_IP || "31.97.203.237";
 
 // Data stores
 const peers = {};

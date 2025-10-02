@@ -1,0 +1,5 @@
+node_modules/
+.env
+server/ssl/
+*.log
+.DS_Store
