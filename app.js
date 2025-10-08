@@ -13,7 +13,8 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: { origin: [
       "https://your-react-app.vercel.app",
-      "http://localhost:5173"
+      "http://localhost:5173",
+      "https://app.directcodeui.in/"
     ] },
   transports: ["websocket"],
 });
