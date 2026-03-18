@@ -20,7 +20,7 @@ const io = new Server(server, {
 });
 
 const PORT = process.env.PORT || 4000;
-const ANNOUNCED_IP = process.env.ANNOUNCED_IP || "31.97.203.237";
+const ANNOUNCED_IP = process.env.ANNOUNCED_IP ;
 
 // Data stores
 const peers = {};
